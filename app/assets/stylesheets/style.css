@@ -303,7 +303,7 @@ strong {
   height: 100vh;
   width: 100%;
   background-color: #1F2535;
-  background: asset_path(img/istra1920.jpg) no-repeat center center fixed;
+  background: url('/assets/istra1920.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -324,7 +324,7 @@ section {
   min-height: 100vh;
   width: 100%;
   background-color: #141C31;
-  background: url(../images/opatija3.jpg);
+  background: url(/assets/opatija3.jpg);
 }
 
 #section-4 {
@@ -337,7 +337,7 @@ section {
 
 #section-7 {
   background-color: #F6F6F6;
-  background-image: url(../images/sec7.jpg);
+  background-image: url(/assets/sec7.jpg);
 }
 /* INTRO TITLE */
 
@@ -619,7 +619,7 @@ a.scroll::after {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 70px;
-  background-image: url(../img/www.png);
+  background-image: url(/assets/www.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   text-align: center;
@@ -1145,7 +1145,7 @@ article img {
   margin-bottom: 10px;
   margin-left: 0;
   line-height: 32px;
-  background-image: url(../img/quote_mark.png);
+  background-image: url(/assets/quote_mark.png);
   background-repeat: no-repeat;
   background-position: left top;
   text-indent: 40px;
@@ -1216,7 +1216,7 @@ article img {
   text-align: center;
   line-height: 0px;
   padding-bottom: 60px;
-  background: url(../img/orna.png) no-repeat center bottom;
+  background: url(/assets/orna.png) no-repeat center bottom;
 }
 
 .boxwsha {
@@ -1373,7 +1373,7 @@ article img {
 }
 
 #section-door {
-  background-image: url(../images/door.jpg);
+  background-image: url(/assets/door.jpg);
   min-height: 100vh;
   width: 100%;
 }
@@ -1503,7 +1503,7 @@ ul.blogsocico li {
 
 ul.blogsocico li a {
   background-color: transparent;
-  background-image: url(../img/social-sprite-min.png);
+  background-image: url(/assets/social-sprite-min.png);
   background-repeat: no-repeat;
   background-size: auto 96px;
   border: 0 none;
@@ -1520,7 +1520,7 @@ ul.blogsocico li a {
 }
 
 .ie7 ul.blogsocico li a, .ie8 ul.blogsocico li a {
-  background-image: url(../img/social-sprite-min.png);
+  background-image: url(/assets/social-sprite-min.png);
 }
 
 ul.blogsocico li.facebook a {
@@ -1557,7 +1557,7 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
   overflow: hidden;
   position: relative;
   float: left;
-  cursor: url(../img/plus_cursor.cur),url(../img/plus_cursor.png),alias;
+  cursor: url(/assets/plus_cursor.cur),url(/assets/plus_cursor.png),alias;
 }
 
 .gallerymore > ul > li a > img {
@@ -1816,7 +1816,7 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
 @media all and (max-width: 768px) {
 
   .hero {
-    background-image: url(../img/istria768.jpg);
+    background-image: url(/assets/istria768.jpg);
   }
 
   .absomid {
