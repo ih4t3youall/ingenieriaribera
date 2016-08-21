@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'inicio/index'
-
+  get 'contacto' => 'inicio#contacto'
+  get 'nosotros' => 'inicio#nosotros'
+  
   root 'inicio#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
