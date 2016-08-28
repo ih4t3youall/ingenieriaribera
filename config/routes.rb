@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'comentario' => 'comentarios#addComentario'
   get 'exito' => 'comentarios#exito'
   
+  get 'bolsaTrabajo' => 'inicio#bolsaTrabajo'
+  
   
   
   get 'prueba' => 'inicio#prueba'
