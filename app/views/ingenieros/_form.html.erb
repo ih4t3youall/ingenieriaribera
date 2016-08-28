@@ -1,0 +1,61 @@
+<%= form_for(@ingeniero) do |f| %>
+  <% if @ingeniero.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ingeniero.errors.count, "error") %> prohibited this ingeniero from being saved:</h2>
+
+      <ul>
+      <% @ingeniero.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido %><br>
+    <%= f.text_field :apellido %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :mail %><br>
+    <%= f.text_field :mail %>
+  </div>
+  <div class="field">
+    <%= f.label :especialidad %><br>
+    <%= f.text_field :especialidad %>
+  </div>
+  <div class="field">
+    <%= f.label :postgrados %><br>
+    <%= f.text_field :postgrados %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin %><br>
+    <%= f.text_field :linkedin %>
+  </div>
+  <div class="field">
+    <%= f.label :facebook %><br>
+    <%= f.text_field :facebook %>
+  </div>
+  <div class="field">
+    <%= f.label :googlemas %><br>
+    <%= f.text_field :googlemas %>
+  </div>
+  <div class="field">
+    <%= f.label :urlImg %><br>
+    <%= f.text_field :urlImg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

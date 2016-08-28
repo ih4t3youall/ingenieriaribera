@@ -1,0 +1,2 @@
+json.extract! bolsa_trabajo, :id, :empleador, :urlImg, :descripcionAbreviada, :descripcionCompleta, :ubicacion, :latitud, :longitud, :requisitos, :requisitosExcluyentes, :sueldo, :horario, :created_at, :updated_at
+json.url bolsa_trabajo_url(bolsa_trabajo, format: :json)

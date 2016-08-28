@@ -1,0 +1,2 @@
+module BolsaTrabajosHelper
+end

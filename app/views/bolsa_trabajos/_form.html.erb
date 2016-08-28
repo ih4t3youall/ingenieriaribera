@@ -1,0 +1,61 @@
+<%= form_for(@bolsa_trabajo) do |f| %>
+  <% if @bolsa_trabajo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bolsa_trabajo.errors.count, "error") %> prohibited this bolsa_trabajo from being saved:</h2>
+
+      <ul>
+      <% @bolsa_trabajo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :empleador %><br>
+    <%= f.text_field :empleador %>
+  </div>
+  <div class="field">
+    <%= f.label :urlImg %><br>
+    <%= f.text_field :urlImg %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcionAbreviada %><br>
+    <%= f.text_field :descripcionAbreviada %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcionCompleta %><br>
+    <%= f.text_field :descripcionCompleta %>
+  </div>
+  <div class="field">
+    <%= f.label :ubicacion %><br>
+    <%= f.text_field :ubicacion %>
+  </div>
+  <div class="field">
+    <%= f.label :latitud %><br>
+    <%= f.text_field :latitud %>
+  </div>
+  <div class="field">
+    <%= f.label :longitud %><br>
+    <%= f.text_field :longitud %>
+  </div>
+  <div class="field">
+    <%= f.label :requisitos %><br>
+    <%= f.text_field :requisitos %>
+  </div>
+  <div class="field">
+    <%= f.label :requisitosExcluyentes %><br>
+    <%= f.text_field :requisitosExcluyentes %>
+  </div>
+  <div class="field">
+    <%= f.label :sueldo %><br>
+    <%= f.text_field :sueldo %>
+  </div>
+  <div class="field">
+    <%= f.label :horario %><br>
+    <%= f.text_field :horario %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

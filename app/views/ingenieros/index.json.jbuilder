@@ -1,0 +1,1 @@
+json.array! @ingenieros, partial: 'ingenieros/ingeniero', as: :ingeniero

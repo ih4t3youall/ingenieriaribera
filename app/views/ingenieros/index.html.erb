@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ingenieros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Direccion</th>
+      <th>Telefono</th>
+      <th>Mail</th>
+      <th>Especialidad</th>
+      <th>Postgrados</th>
+      <th>Linkedin</th>
+      <th>Facebook</th>
+      <th>Googlemas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ingenieros.each do |ingeniero| %>
+      <tr>
+        <td><%= ingeniero.nombre %></td>
+        <td><%= ingeniero.apellido %></td>
+        <td><%= ingeniero.direccion %></td>
+        <td><%= ingeniero.telefono %></td>
+        <td><%= ingeniero.mail %></td>
+        <td><%= ingeniero.especialidad %></td>
+        <td><%= ingeniero.postgrados %></td>
+        <td><%= ingeniero.linkedin %></td>
+        <td><%= ingeniero.facebook %></td>
+        <td><%= ingeniero.googlemas %></td>
+        <td><%= link_to 'Show', ingeniero %></td>
+        <td><%= link_to 'Edit', edit_ingeniero_path(ingeniero) %></td>
+        <td><%= link_to 'Destroy', ingeniero, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<a href="inicio">inicio</a>
+<%= link_to 'New Ingeniero', new_ingeniero_path %>

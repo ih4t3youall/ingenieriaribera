@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Empleador:</strong>
+  <%= @bolsa_trabajo.empleador %>
+</p>
+
+<p>
+  <strong>Urlimg:</strong>
+  <%= @bolsa_trabajo.urlImg %>
+</p>
+
+<p>
+  <strong>Descripcionabreviada:</strong>
+  <%= @bolsa_trabajo.descripcionAbreviada %>
+</p>
+
+<p>
+  <strong>Descripcioncompleta:</strong>
+  <%= @bolsa_trabajo.descripcionCompleta %>
+</p>
+
+<p>
+  <strong>Ubicacion:</strong>
+  <%= @bolsa_trabajo.ubicacion %>
+</p>
+
+<p>
+  <strong>Latitud:</strong>
+  <%= @bolsa_trabajo.latitud %>
+</p>
+
+<p>
+  <strong>Longitud:</strong>
+  <%= @bolsa_trabajo.longitud %>
+</p>
+
+<p>
+  <strong>Requisitos:</strong>
+  <%= @bolsa_trabajo.requisitos %>
+</p>
+
+<p>
+  <strong>Requisitosexcluyentes:</strong>
+  <%= @bolsa_trabajo.requisitosExcluyentes %>
+</p>
+
+<p>
+  <strong>Sueldo:</strong>
+  <%= @bolsa_trabajo.sueldo %>
+</p>
+
+<p>
+  <strong>Horario:</strong>
+  <%= @bolsa_trabajo.horario %>
+</p>
+
+<%= link_to 'Edit', edit_bolsa_trabajo_path(@bolsa_trabajo) %> |
+<%= link_to 'Back', bolsa_trabajos_path %>

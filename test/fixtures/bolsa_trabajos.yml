@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  empleador: MyString
+  urlImg: MyString
+  descripcionAbreviada: MyString
+  descripcionCompleta: MyString
+  ubicacion: MyString
+  latitud: MyString
+  longitud: MyString
+  requisitos: MyString
+  requisitosExcluyentes: MyString
+  sueldo: MyString
+  horario: MyString
+
+two:
+  empleador: MyString
+  urlImg: MyString
+  descripcionAbreviada: MyString
+  descripcionCompleta: MyString
+  ubicacion: MyString
+  latitud: MyString
+  longitud: MyString
+  requisitos: MyString
+  requisitosExcluyentes: MyString
+  sueldo: MyString
+  horario: MyString

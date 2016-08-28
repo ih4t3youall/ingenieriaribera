@@ -1,0 +1,2 @@
+json.extract! ingeniero, :id, :nombre, :apellido, :direccion, :telefono, :mail, :especialidad, :postgrados, :linkedin, :facebook, :googlemas, :created_at, :updated_at
+json.url ingeniero_url(ingeniero, format: :json)

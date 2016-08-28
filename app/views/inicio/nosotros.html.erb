@@ -50,27 +50,15 @@
   <section id="section-6">
     <div class="horBar2Bxx wow fadeInLeftBig" data-wow-duration="3s"></div>
     <header class="main_h">
-      <div class="menufix"> <a class="logo" href="index.html"><img src="/assets/logo-sample.png" alt="Hello"></a>
-        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
-        <nav>
-          <ul>
-            <li class="line"><a class="out animsition-link" href="index.html">HOME</a></li>
-            <li><a class="out active animsition-link" href="company.html">COMPANY</a></li>
-            <li class="line"><a class="out animsition-link" href="service.html">SERVICES</a></li>
-            <li class="line"><a class="out animsition-link" href="blog.html">BLOG</a></li>
-            <li class="line"><a class="out animsition-link" href="gallery.html">GALLERY</a></li>
-            <li class="line"><a class="out animsition-link" href="contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- / row --> 
+      
+      <%= render "menu/menu" %>
       
     </header>
     <div class="grid flex">
       <div class="row">
         <div class="colw_6">
           <h1 id="title-sub1">Free web template Istria 1</h1>
-          <h2 id="title-sub2">OUR COMPANY</h2>
+          <h2 id="title-sub2">Nuestro Equipo! </h2>
         </div>
         <!-- END colw_6 -->
         
@@ -100,11 +88,11 @@
         
         <div class="colw_6 beta column reladiv">
           <div class="box66">
-            <h3 class="title-3 wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">Lorem ipsum dolor sit first</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt eos ipsum id Facilis nesciunt eos, ipsum id, architecto velit sequi, porro vitae officiis, voluptatibus minus voluptates ab. Dolore, dolor repellat quasi.</p>
-            <p>Architecto velit sequi fuga minima commodi, porro vitae officiis, minus voluptates ab. Dolore, dolor repellat quasi.</p>
-            <p class="paddbott100">Facilis nesciunt eos, ipsum id, architecto velit sequi, porro vitae officiis, voluptatibus minus voluptates ab. Dolore, <a href="#">dolor repellat quasi</a>.</p>
-            <a href="#" class="istria-btn">Read More</a>
+            
+            <p>Somos una organizacion de ingenieros y futuros ingenieros destinados tanto a llevar la ingenieria a la gente como a dar soporte a los nuevos egresados para ayudarlos en su nuevo camino como profesionales.</p>
+            <p>Contamos con gente en diversas areas para diversificar y especializar el apoyo que se necesite en el area que se necesite.</p>
+            <p class="paddbott100">En esta pagina encontrara formas de contacto con nuestro equipo y tambien podra ver sus perfiles!.</p>
+            
             <div class="istria-line left">
               <div class="inner"></div>
             </div>
@@ -133,9 +121,22 @@
             <div class="col_6 beta">
               <div class="box90 boxwsha reladiv column2">
                 <h4 class="color wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">Ingenieria industrial </h4>
-               <div class="user one"></div>
-               <div class="user one"></div>
-               <div class="user one"></div>
+               <div class="user one">
+                    <% @ingenieros.each do |ingeniero| %>
+	                <% if ingeniero.especialidad == "industrial" %>
+	               
+	                
+	                <div class="user" style="background-image:url('<%= ingeniero.urlImg %>')">
+	                   
+	                </div>
+	                <% end %>
+	
+	
+              <% end %>
+                 
+                 
+               </div>
+               
                 <div class="istria-line left">
                   <div class="inner"></div>
                 </div>
@@ -150,9 +151,20 @@
             <div class="col_6 beta wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".6s">
               <div class="box90 boxwsha reladiv column2">
                 <h4 class="color wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="1s">Ingenieria mecanica</h4>
-                 <div class="user one"></div>
-                 <div class="user one"></div>
-                 <div class="user one"></div>
+                 <div class="user one">
+                   
+                   <% @ingenieros.each do |ingeniero| %>
+	                <% if ingeniero.especialidad == "mecanica" %>
+	                   <div class="user" style="background-image:url('<%= ingeniero.urlImg %>')">
+	                   
+	                </div>
+	                <% end %>
+	
+	
+              <% end %>
+                   
+                 </div>
+                 
                 <div class="istria-line left">
                   <div class="inner"></div>
                 </div>
@@ -173,9 +185,17 @@
                   
                    
                      <h4 class="color wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="1s">Ingenieria en sistemas</h4>
-                 <div class="user one"></div>
-                 <div class="user one"></div>
-                 <div class="user one"></div>
+                       <% @ingenieros.each do |ingeniero| %>
+	                <% if ingeniero.especialidad == "sistemas" %>
+	               
+	                
+	                <div class="user" style="background-image:url('<%= ingeniero.urlImg %>')">
+	                   
+	                </div>
+	                <% end %>
+	
+	
+              <% end %>
                 <div class="istria-line left">
                   <div class="inner"></div>
                 </div>
@@ -196,9 +216,17 @@
             <div class="col_6 beta">
               <div class="box90 boxwsha reladiv column2">
                 <h4 class="color wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">Ingenieria electrica </h4>
-               <div class="user one"></div>
-               <div class="user one"></div>
-               <div class="user one"></div>
+                     <% @ingenieros.each do |ingeniero| %>
+	                <% if ingeniero.especialidad == "electrica" %>
+	               
+	                
+	                <div class="user" style="background-image:url('<%= ingeniero.urlImg %>')">
+	                   
+	                </div>
+	                <% end %>
+	
+	
+              <% end %>
                 <div class="istria-line left">
                   <div class="inner"></div>
                 </div>
@@ -213,9 +241,17 @@
             <div class="col_6 beta wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".6s">
               <div class="box90 boxwsha reladiv column2">
                 <h4 class="color wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="1s">Ingenieria quimica</h4>
-                 <div class="user one"></div>
-                 <div class="user one"></div>
-                 <div class="user one"></div>
+                       <% @ingenieros.each do |ingeniero| %>
+	                <% if ingeniero.especialidad == "quimica" %>
+	               
+	                
+	                <div class="user" style="background-image:url('<%= ingeniero.urlImg %>')">
+	                   
+	                </div>
+	                <% end %>
+	
+	
+              <% end %>
                 <div class="istria-line left">
                   <div class="inner"></div>
                 </div>
@@ -235,10 +271,18 @@
               <div class="colw_12 alomdebe">
                   
                    
-                     <h4 class="color wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="1s">Ingenieria naval (?)</h4>
-                 <div class="user one"></div>
-                 <div class="user one"></div>
-                 <div class="user one"></div>
+                     <h4 class="color wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="1s">Ingenieria Civil </h4>
+                       <% @ingenieros.each do |ingeniero| %>
+	                <% if ingeniero.especialidad == "civil" %>
+	               
+	                
+	                <div class="user" style="background-image:url('<%= ingeniero.urlImg %>')">
+	                   
+	                </div>
+	                <% end %>
+	
+	
+              <% end %>
                 <div class="istria-line left">
                   <div class="inner"></div>
                 </div>
@@ -287,11 +331,11 @@
         
         <div class="colw_6 alomdebe">
           <div class="colw_12 alomdebe white paddtop105 hei100 wow fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
-            <h5 class="title-3">Lorem ipsum dolor 1</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt eos ipsum id Facilis nesciunt eos, ipsum id, minus voluptates ab. Dolore, dolor repellat quasi. Facilis nesciunt eos, ipsum id, architecto velit sequi.</p>
-            <p>Architecto velit sequi fuga minima commodi, porro vitae officiis, minus voluptates ab. Dolore, dolor repellat quasi. Facilis nesciunt eos, ipsum id, architecto velit sequi, porro vitae officiis. Architecto velit sequi fuga minima commodi, porro vitae officiis. Minus voluptates ab nesciunt eos, ipsum id, architecto velit sequi, porro vitae officiis.</p>
-            <p>Architecto velit sequi fuga minima commodi, porro vitae officiis, minus voluptates ab. Dolore, dolor repellat quasi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt eos ipsum id Facilis nesciunt eos, ipsum id, minus voluptates ab.</p>
+            <h5 class="title-3">Dudas ?</h5>
+            <p>Acordate que estamos aca para ayudar!, cual consulta o duda que tengas preguntanos, si no sabes a quien referirte especificamente, encvia un mail por la seccion <span>contacto</span> y nosotros nos encargamos de que te conteste un especialista.</p>
+            <p>Ademas nuestra funcion es ayudar tanto a la comunidad como a los graduados en problemas de ingenieria, nosotros nos nutrimos de sus preguntas para mejorar y crecer no dudes en acercarte a nuestra cede ! , en la seccion contacto , encontraras la direccion y un mapa, y tambien los horarios de atencion</p>
+            <p>El compromiso es parte fundamental de este emprendimiento, nosotros nos comprometemos a resolver tus dudas o ayudarte en tu carrera pero tambien esperamos responsabilidad y feedback a nuestro tabajo para la comunidad.</p>
+            
             <div class="clear"></div>
             <div class="col_12">
               <div class="triangle">

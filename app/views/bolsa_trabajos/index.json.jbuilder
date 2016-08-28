@@ -1,0 +1,1 @@
+json.array! @bolsa_trabajos, partial: 'bolsa_trabajos/bolsa_trabajo', as: :bolsa_trabajo

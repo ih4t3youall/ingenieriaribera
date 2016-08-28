@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
-  get 'inicio/index'
+  
+  resources :bolsa_trabajos
+  resources :comentarios
+  resources :ingenieros
   get 'contacto' => 'inicio#contacto'
   get 'nosotros' => 'inicio#nosotros'
+  get 'cursos' => 'inicio#cursos'
+  get 'inicio' => 'inicio#index'
+  get 'comentario' => 'comentarios#addComentario'
+  get 'exito' => 'comentarios#exito'
+  
+  
+  
+  get 'prueba' => 'inicio#prueba'
   
   root 'inicio#index'
 

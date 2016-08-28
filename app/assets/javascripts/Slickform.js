@@ -103,32 +103,37 @@ $(document).ready(function(){
 			 * THEN RETREIVING DATA FROM PHP SCRIPT
 			 *
 			*/
+			var form = new Object();
 			
-			$.post(url,{ usersname: usersname.val(), usersemail: usersemail.val(), usersphone: usersphone.val(), userssubject: userssubject.val(), userscomment: userscomment.val(), usershuman: usershuman.val(), isvalid: isvalid } , function(data) {
-				
-				if(data == 'success'){
-					
-					$(".slickbutton").animate({marginTop:'50px'},1000).delay(6000).animate({marginTop:'0px'},1000);
-					$(".successcontainer").html(successmessage);
-					$(".successcontainer").delay(1200).fadeIn(1000).delay(4000).fadeOut(1000);
-					$("#name").val('');
-					$("#email").val('');
-					$("#phone").val('');					
-					$("#comment").val('');
-					$("#human").val('');
-					$('input[type=submit]', $("#slickform")).removeAttr('disabled');
-				
-				} else {
-					
-					$(".slickbutton").animate({marginTop:'50px'},1000).delay(6000).animate({marginTop:'0px'},1000);
-					$(".errorcontainer").html(failedmessage);
-					$(".errorcontainer").delay(1200).fadeIn(1000).delay(4000).fadeOut(1000);
-					$('input[type=submit]', $("#slickform")).removeAttr('disabled');
-					return false;
-					
+			form.nombre = $('#name').val();
+			form.telefono = $('#phone').val();
+			form.email = $('#email').val();
+			form.mensaje = $('#comment').val();
+			
+			
+			$.ajax({
+
+			    url:"comentario",
+				dataType:"json",
+				data:form,
+				success:function(data){
+					if (data == 200){
+						window.location.replace("inicio");
+						
+						
+					}
+
+				},
+				error : function(data){
+				console.log(data);
+				alert("mensaje error");
 				}
-				
-			});
+
+
+
+				});
+			
+			
 			
 			/* 
 			 *

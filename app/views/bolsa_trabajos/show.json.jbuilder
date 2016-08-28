@@ -1,0 +1,1 @@
+json.partial! "bolsa_trabajos/bolsa_trabajo", bolsa_trabajo: @bolsa_trabajo

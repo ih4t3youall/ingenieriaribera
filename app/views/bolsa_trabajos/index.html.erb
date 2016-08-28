@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bolsa Trabajos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Empleador</th>
+      <th>Urlimg</th>
+      <th>Descripcionabreviada</th>
+      <th>Descripcioncompleta</th>
+      <th>Ubicacion</th>
+      <th>Latitud</th>
+      <th>Longitud</th>
+      <th>Requisitos</th>
+      <th>Requisitosexcluyentes</th>
+      <th>Sueldo</th>
+      <th>Horario</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bolsa_trabajos.each do |bolsa_trabajo| %>
+      <tr>
+        <td><%= bolsa_trabajo.empleador %></td>
+        <td><%= bolsa_trabajo.urlImg %></td>
+        <td><%= bolsa_trabajo.descripcionAbreviada %></td>
+        <td><%= bolsa_trabajo.descripcionCompleta %></td>
+        <td><%= bolsa_trabajo.ubicacion %></td>
+        <td><%= bolsa_trabajo.latitud %></td>
+        <td><%= bolsa_trabajo.longitud %></td>
+        <td><%= bolsa_trabajo.requisitos %></td>
+        <td><%= bolsa_trabajo.requisitosExcluyentes %></td>
+        <td><%= bolsa_trabajo.sueldo %></td>
+        <td><%= bolsa_trabajo.horario %></td>
+        <td><%= link_to 'Show', bolsa_trabajo %></td>
+        <td><%= link_to 'Edit', edit_bolsa_trabajo_path(bolsa_trabajo) %></td>
+        <td><%= link_to 'Destroy', bolsa_trabajo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bolsa trabajo', new_bolsa_trabajo_path %>
