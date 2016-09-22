@@ -78,23 +78,23 @@ $(document).ready(function(){
 			
 			
 			//CHECKING THE USER IS HUMAN
-			if (usershuman.val() != 14) {
+		/*	if (usershuman.val() != 14) {
 				$(".slickbutton").animate({marginTop:'50px'},1000).delay(6000).animate({marginTop:'0px'},1000);
 				$(".errorcontainer").html('Your Are You Human Math Is Incorrect!');
 				$(".errorcontainer").delay(1200).fadeIn(1000).delay(4000).fadeOut(1000);
 				$('input[type=submit]', $("#slickform")).removeAttr('disabled');
 				return false;
-			}
+			}*/
 			//CHECKING THE USER IS HUMAN
 			
 			//CHECKING THE USER IS HUMAN
-			if (userscomment.val() == "") {
+			/*if (userscomment.val() == "") {
 				$(".slickbutton").animate({marginTop:'50px'},1000).delay(6000).animate({marginTop:'0px'},1000);
 				$(".errorcontainer").html('You Forgot To Leave A Message!');
 				$(".errorcontainer").delay(1200).fadeIn(1000).delay(4000).fadeOut(1000);
 				$('input[type=submit]', $("#slickform")).removeAttr('disabled');
 				return false;
-			}
+			}*/
 			//CHECKING THE USER IS HUMAN
 			
 			/* 

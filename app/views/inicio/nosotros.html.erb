@@ -57,17 +57,12 @@
     <div class="grid flex">
       <div class="row">
         <div class="colw_6">
-          <h1 id="title-sub1">Free web template Istria 1</h1>
+          
           <h2 id="title-sub2">Nuestro Equipo! </h2>
         </div>
         <!-- END colw_6 -->
         
-        <div class="colw_6 wow zoomIn">
-          <div class="box-fix">
-            <h3 class="centered">Find us on social media</h3>
-            <div class="social"> <a href="https://www.facebook.com/Valeron-design-studio-245216518822368/" class="soc-btn facebook"> <i class="fa fa-facebook"></i> Facebook </a> <a href="https://twitter.com/ds_valeron" class="soc-btn twitter"> <i class="fa fa-twitter"></i> Twitter </a> <a href="https://plus.google.com/116499013539302933204" class="soc-btn google5"> <i class="fa fa-google"></i> Google + </a> </div>
-          </div>
-        </div>
+      <%= render "menu/redesSociales" %>
         <!-- END col_6 --> 
         
       </div>
@@ -78,7 +73,7 @@
           <div class="wrapimg hack960">
             <div class="pic"> <img src="/assets/web-dizajn-6.jpg" class="pic-image full-width" alt="Pic"/>
               <div class="pic-caption top-to-bottom">
-                <h4 class="pic-title">Free web template</h4>
+                <h4 class="pic-title">Nuestro equipo</h4>
               </div>
             </div>
           </div>
@@ -337,7 +332,7 @@
             <p>El compromiso es parte fundamental de este emprendimiento, nosotros nos comprometemos a resolver tus dudas o ayudarte en tu carrera pero tambien esperamos responsabilidad y feedback a nuestro tabajo para la comunidad.</p>
             
             <div class="clear"></div>
-            <div class="col_12">
+           <!-- triangulos <div class="col_12">
               <div class="triangle">
                 <div class='wrap2'>
                   <div class='crop'> <img src='/assets/staff1.jpg'> </div>
@@ -364,17 +359,14 @@
                   <div class='crop'> <img src='/assets/staff9.jpg'> </div>
                 </div>
               </div>
-              <!-- END triangle --> 
             </div>
-            <!-- END col_12 --> 
             
           </div>
-          <!-- END col_12 --> 
-          
+      triangulos -->          
         </div>
         <!-- END col_6 -->
         
-        <p class="dolje">2005 - <script>document.write(new Date().getFullYear())</script> Valeron design studio | Izrada web stranica <a href="http://www.valeron.net" class="linkline">VALERON design studio</a></p>
+        
       </div>
       <!-- END row --> 
       
@@ -383,14 +375,11 @@
     
   </div>
   <!-- END #section-door --> 
+  <%= render "menu/footer" %>
 </div>
 <!-- END .animsition-overla --> 
 
-<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script> 
-<script src="js/wow.min.js"></script> 
-<script src="js/animsition.min.js"></script> 
-<script src="js/lightgallery-all.min.js"></script> -->
+
 <script type="text/javascript">
         $(document).ready(function(){
             $('#lightgallery').lightGallery();
